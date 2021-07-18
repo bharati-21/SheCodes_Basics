@@ -11,20 +11,44 @@
 
             body {
                 padding: 20px;
+                background: #f6f2fe;
             }
 
             h1 {
                 color: steelblue;
                 font-size: 48px;
                 text-decoration: underline;
-                font-weight:lighter;
                 text-align:center;
+                color: #885df1;
             }
 
             h2 {
                 text-align:center;
-                color: chocolate;
+                color: rgb(233, 196, 170);
                 font-size: 30px;
+                color: #272044;
+                font-weight: normal;
+            }
+
+            ul {
+                list-style: none;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 10px 20px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            a:hover {
+                text-decoration: underline;
             }
 
             .color-red {
@@ -37,20 +61,65 @@
 
             .color-green {
                 color: green;
+                display: block;
+            }
+
+            .btn-apply {
+                color:#885df1;
+                font-size: 20px;
+                padding: 20px 25px;
+                margin: 20px auto;
+                display: block;
+                background: transparent;
+                border-radius: 50px;
+                border: 1px solid #885df1;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                transition: all 200ms ease-in-out;
+                cursor: pointer;
+            }
+
+            .btn-apply:hover {
+                background:#885df1;
+                color:#f6f2fe;
+            }
+
+            .info-container h3 {
+                text-align:center;
+            }
+
+            .info-container img{
+                width: 500px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            footer.footer {
+                text-align:center;
+                font-size: 15px;
+                margin-top: 40px;
+            }
+
+            span.light-purple {
+                color:#885df1;
             }
         </style>
     </head>
     <body>
         <h1>SheCodes</h1>
         <h2>Coding Workshop</h2>
+        <button class="btn-apply">Apply Now</button>
         <ul>
             <li><a href="https://www.shecodes.io/students" class="color-blue">Coders</a></li>
             <li><a href="//www.shecodes.io/workshops" class="color-red">Courses</a></li>
             <li><a href="https://www.shecodes.io/stories" class="color-green">Stories</a></li>
         </ul>
         <hr />
-        
-        <h3>More Info</h3>
-        <img src="https://images.unsplash.com/photo-1618422168181-177d9d0a1fca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Woman coding" width="500">
+        <div class="info-container">
+            <h3>More Info</h3>
+            <img src="https://images.unsplash.com/photo-1618422168181-177d9d0a1fca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Woman coding">
+        </div>
+        <footer class="footer">
+            <p><span class="light-purple">Email: </span>hello@shecodes.io <span class="light-purple">Instagram: </span>@shecodes.io</p>
+        </footer>
     </body>
 </html>
