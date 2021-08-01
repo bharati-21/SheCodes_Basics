@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bharati | SheCodes Final Project</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                background-color: #f4f4f4;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 1rem;
+            }
+
+            #page-wrapper {
+                background: linear-gradient(#082032, #334756, #2C394B, #082032);
+                padding: 1rem;
+                margin: 2rem auto;
+                border-radius: 1rem;
+                color: #fff;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 1rem auto;
+            }
+
+            header.hero {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            header.hero .hero-head {
+                border: 2px solid salmon;
+                padding: 1rem;
+                font-size: 2.5rem;
+            }
+
+            header.hero h2.lead {
+                margin: 1.5rem auto 1rem auto;
+            }
+
+            .change-color {
+                color: steelblue;
+                background-color: #fff;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .main {
+                padding: 1rem;
+                border-top: 1px solid salmon;
+            }
+            .main section.img img {
+                max-width: 100%;
+                margin: 1rem auto;
+                display: block;
+                box-shadow: 0px 0px 10px 5px black;
+            }
+
+            strong, em {
+                color: salmon;
+            }
+
+            .main section.about p.info{
+                padding: 1rem;
+                font-size: 1.1rem;
+                line-height: 1.5;
+            }
+
+            a {
+                text-decoration: none;
+                color: salmon;
+                display: inline-block;
+                margin: 1rem auto;
+                text-align: center;
+                padding: 0.5rem 0.75rem;
+                transition: all 0.25s ease-in;
+                font-weight: bold;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                background: salmon;
+                color:#082032;
+                border-radius: 0.5rem;
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+
+            button.btn-try {
+                display: block;
+                padding: 1rem;
+                border-radius: 1rem;
+                outline: none;
+                border:none;
+                font-size: 2.5rem;
+                margin: 1.5rem auto;
+                text-transform: uppercase;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: bold;
+                box-shadow: 5px 5px 10px black;
+                transition: all 0.2s ease-in-out;
+            }
+
+            button.btn-try:hover {
+                background: steelblue;
+                color: #fff;
+
+            }
+
+            footer {
+                border-top: 3px solid salmon;
+                padding: 2rem;
+                text-align: center;
+            }
+
+            footer span.copyright {
+                font-size: 0.8rem;
+                margin-top: 1rem;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-wrapper" class="container">
+            <header class="hero">
+                <h1 class="hero-head">I love Paneer</h1>
+                <h2 class="lead">a.k.a <span class="change-color">Cottage Cheese</span>
+                </h2>
+            </header>
+            <main class="main">
+                <section class="img">
+                    <img src="https://images.unsplash.com/photo-1559561853-08451507cbe7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=825&q=80" alt="Paneer in a Bowl">
+                    <hr/>
+                </section>
+                <section class="about">
+                    <p class="info">
+                    <strong>Paneer</strong> or <strong>Indian cottage cheese</strong> is a fresh acid-set cheese common in the Indian subcontinent (India, Pakistan, Bangladesh) made from cow or buffalo milk. It is a non-aged, non-melting soft cheese made by curdling milk with a fruit- or vegetable-derived acid, such as lemon juice. Its acid-set form (cheese curd) before pressing is called <strong>chenna</strong></p>
+                    <br />
+                    <hr/>
+                    <br/>
+                    <p class="info">
+                    <em>Preparation: </em>Paneer is prepared by adding food acid, such as lemon juice, vinegar, citric acid or dahi (yogurt) to hot milk to separate the curds from the whey. The curds are drained in muslin or cheesecloth and the excess water is pressed out. The resulting paneer is dipped in chilled water for 2–3 hours to improve its texture and appearance. From this point, the preparation of paneer diverges based on its use and regional tradition.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Paneer" target="_blank">Read More on Wikipedia</a>
+                </section>
+                <section class="button-section">
+                    <button class="btn-try">Try Home-Made Paneer</button>
+                </section>
+            </main>
+            <footer class="footer">
+                Made with ❤ by Bharati Subramanian
+                <br/>
+                <span class="copyright">&copy; 2021</span>
+            </footer>
+        </div>
+
+        <script>
+            const button = document.querySelector('.btn-try');
+
+            button.addEventListener('click', handleButtonClick);
+
+            function handleButtonClick(e) {
+                let userName = prompt("What is your name?");
+
+                if(userName === "" || userName === null ){
+                    alert('No name, no Paneer for you!');
+                }
+
+                else {
+                    alert(`Thanks ${userName}. We will get back in touch. Till then explore Paneer Recipes online!`);
+                }
+            }
+        </script>
+    </body>
+</html>
